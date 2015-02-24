@@ -15,6 +15,14 @@
 		9DE018071A9153E50028DD17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE018061A9153E50028DD17 /* Images.xcassets */; };
 		9DE0180A1A9153E50028DD17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DE018081A9153E50028DD17 /* LaunchScreen.xib */; };
 		9DE018161A9153E50028DD17 /* MHackersGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE018151A9153E50028DD17 /* MHackersGameTests.swift */; };
+		9DE8013B1A918A05005AC230 /* asteroid_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DE8013A1A918A05005AC230 /* asteroid_large.png */; };
+		9DE8013D1A918A0F005AC230 /* asteroid_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DE8013C1A918A0F005AC230 /* asteroid_small.png */; };
+		9DE8013F1A918A17005AC230 /* explosion.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9DE8013E1A918A17005AC230 /* explosion.gif */; };
+		9DE801411A918A1D005AC230 /* spaceship_animated.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9DE801401A918A1D005AC230 /* spaceship_animated.gif */; };
+		9DE801471A91975A005AC230 /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE801461A91975A005AC230 /* Asteroid.swift */; };
+		9DE801491A91A55E005AC230 /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE801481A91A55E005AC230 /* Spaceship.swift */; };
+		9DE8014B1A91B04E005AC230 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE8014A1A91B04E005AC230 /* GameOverScene.swift */; };
+		9DE8014D1A91BD2F005AC230 /* GamePlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE8014C1A91BD2F005AC230 /* GamePlayScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,14 @@
 		9DE0180F1A9153E50028DD17 /* MHackersGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHackersGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE018141A9153E50028DD17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DE018151A9153E50028DD17 /* MHackersGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHackersGameTests.swift; sourceTree = "<group>"; };
+		9DE8013A1A918A05005AC230 /* asteroid_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid_large.png; sourceTree = "<group>"; };
+		9DE8013C1A918A0F005AC230 /* asteroid_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid_small.png; sourceTree = "<group>"; };
+		9DE8013E1A918A17005AC230 /* explosion.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = explosion.gif; sourceTree = "<group>"; };
+		9DE801401A918A1D005AC230 /* spaceship_animated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = spaceship_animated.gif; sourceTree = "<group>"; };
+		9DE801461A91975A005AC230 /* Asteroid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
+		9DE801481A91A55E005AC230 /* Spaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
+		9DE8014A1A91B04E005AC230 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		9DE8014C1A91BD2F005AC230 /* GamePlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +97,16 @@
 		9DE017F81A9153E50028DD17 /* MHackersGame */ = {
 			isa = PBXGroup;
 			children = (
+				9DE018211A91896C0028DD17 /* Resources */,
 				9DE017FB1A9153E50028DD17 /* AppDelegate.swift */,
+				9DE018011A9153E50028DD17 /* GameViewController.swift */,
 				9DE017FD1A9153E50028DD17 /* GameScene.sks */,
 				9DE017FF1A9153E50028DD17 /* GameScene.swift */,
-				9DE018011A9153E50028DD17 /* GameViewController.swift */,
+				9DE8014C1A91BD2F005AC230 /* GamePlayScene.swift */,
+				9DE8014A1A91B04E005AC230 /* GameOverScene.swift */,
 				9DE018031A9153E50028DD17 /* Main.storyboard */,
+				9DE801461A91975A005AC230 /* Asteroid.swift */,
+				9DE801481A91A55E005AC230 /* Spaceship.swift */,
 				9DE018061A9153E50028DD17 /* Images.xcassets */,
 				9DE018081A9153E50028DD17 /* LaunchScreen.xib */,
 				9DE017F91A9153E50028DD17 /* Supporting Files */,
@@ -116,6 +137,17 @@
 				9DE018141A9153E50028DD17 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DE018211A91896C0028DD17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DE801401A918A1D005AC230 /* spaceship_animated.gif */,
+				9DE8013E1A918A17005AC230 /* explosion.gif */,
+				9DE8013C1A918A0F005AC230 /* asteroid_small.png */,
+				9DE8013A1A918A05005AC230 /* asteroid_large.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +230,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE8013B1A918A05005AC230 /* asteroid_large.png in Resources */,
+				9DE8013F1A918A17005AC230 /* explosion.gif in Resources */,
 				9DE0180A1A9153E50028DD17 /* LaunchScreen.xib in Resources */,
 				9DE018071A9153E50028DD17 /* Images.xcassets in Resources */,
+				9DE801411A918A1D005AC230 /* spaceship_animated.gif in Resources */,
 				9DE017FE1A9153E50028DD17 /* GameScene.sks in Resources */,
+				9DE8013D1A918A0F005AC230 /* asteroid_small.png in Resources */,
 				9DE018051A9153E50028DD17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE8014D1A91BD2F005AC230 /* GamePlayScene.swift in Sources */,
+				9DE801471A91975A005AC230 /* Asteroid.swift in Sources */,
+				9DE8014B1A91B04E005AC230 /* GameOverScene.swift in Sources */,
 				9DE018001A9153E50028DD17 /* GameScene.swift in Sources */,
 				9DE018021A9153E50028DD17 /* GameViewController.swift in Sources */,
 				9DE017FC1A9153E50028DD17 /* AppDelegate.swift in Sources */,
+				9DE801491A91A55E005AC230 /* Spaceship.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +453,7 @@
 				9DE0181B1A9153E50028DD17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DE0181C1A9153E50028DD17 /* Build configuration list for PBXNativeTarget "MHackersGameTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +462,7 @@
 				9DE0181E1A9153E50028DD17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
