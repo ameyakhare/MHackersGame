@@ -112,7 +112,7 @@ class GamePlayScene: SKScene, SKPhysicsContactDelegate {
     
     func didBeginContact(contact: SKPhysicsContact) {
         let scene = GameOverScene(size: size, score: score)
-        scene.scaleMode = .AspectFill;
+        scene.scaleMode = .AspectFill
         self.view?.presentScene(scene)
     }
     
